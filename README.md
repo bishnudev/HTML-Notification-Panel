@@ -28,7 +28,7 @@ Note: 'info' is same as default
 ```javascript
 createCustomNotification('your message', 'danger');
 createCustomNotification('your message', 'info');
-createCustomNotification('your message', 'success);
+createCustomNotification('your message', 'success');
 ```
 
 ### Some useful functions
