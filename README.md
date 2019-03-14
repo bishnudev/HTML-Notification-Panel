@@ -23,8 +23,10 @@ Default:
 createNotification('your message');
 ```
 
-Custom Notifications:- Available types: 'danger', 'info', 'success'
+Custom Notifications (Available types: 'danger', 'info', 'success')
+
 Note: 'info' is same as default
+
 ```javascript
 createCustomNotification('your message', 'danger');
 createCustomNotification('your message', 'info');
