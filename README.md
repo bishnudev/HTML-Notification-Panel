@@ -18,12 +18,13 @@ Add the following code in your html body
 ```
 ### Trigger notifications
 There are two ways you can create notifications.
+
 Default:
 ```javascript
 createNotification('your message');
 ```
 
-Custom Notifications (Available types: 'danger', 'info', 'success')
+Custom Notifications (Available types: 'danger', 'info', 'success'):
 
 Note: 'info' is same as default
 
