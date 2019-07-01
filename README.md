@@ -5,39 +5,30 @@
 
 **jQuery**
 ## Getting started
-Import the js and css files above in your project.
-
-Add the following code in your html body
+Add the following code in your html head tag
 ```html
-<div id="notificationWrapper">
-	<div class='notificationpanel' id='notificationPanel'>
-		<span class="notification" id='notificationPanelMessage'>Your message</span>
-		<span class="notificationdismiss fas" onclick="notificationDismiss();">&#xf410;</span>
-	</div>
-</div>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+	integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="<path-to-project>/style/notificationpanel.css">
+<script type="text/javascript" src="<path-to-project>/js/notificationpanel.js"></script>
 ```
 ### Trigger notifications
-There are two ways you can create notifications.
+There are multiple ways you can create notifications.
 
 Default:
 ```javascript
-createNotification('your message');
+$(document).ready(function () {
+	var myNot = new devNotification();
+	myNot.create('message');
+});
 ```
 
-Custom Notifications (Available types: 'danger', 'info', 'success'):
+### Method
 
-Note: 'info' is same as default
+#### create
+.create() method accepts four parameters: message, type, backgroundcolor, fontcolor
 
-```javascript
-createCustomNotification('your message', 'danger');
-createCustomNotification('your message', 'info');
-createCustomNotification('your message', 'success');
-```
+**type** can take value of 'default', 'info', 'success', 'danger', and 'custom'
 
-### Some useful functions
-
-```javascript
-notificationDismiss(); // hides the panel with animation
-hideNotificationPanel(); // hides the panel without animation
-showNotificationPanel(); // shows the panel without animation
-```
+**Remember that last two parameters should also be passed if type is 'custom'**
