@@ -1,6 +1,6 @@
 # HTML Notification Panel
 
-## Requirement
+## Requirements
 **Font Awesome 5**
 
 **jQuery**
