@@ -13,8 +13,10 @@ Add the following code in your html head tag
 <link rel="stylesheet" type="text/css" href="<path-to-project>/style/notificationpanel.css">
 <script type="text/javascript" src="<path-to-project>/js/notificationpanel.js"></script>
 ```
+Note: replace <path-to-project> with your project path.
+
 ### Trigger notifications
-There are multiple ways you can create notifications.
+There are multiple ways you can create notifications. See 'create' method below for more.
 
 Default:
 ```javascript
