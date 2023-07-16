@@ -1,4 +1,4 @@
-# HTML Notification Panel
+# JS Notification Panel
 
 ## Requirements
 **Font Awesome 5**
